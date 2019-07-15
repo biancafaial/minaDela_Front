@@ -9,7 +9,7 @@ app.appendChild(authors);
 
 
 
-fetch("http://localhost:3000/minas/" + categoria).then(response => response.json() )
+fetch("https://minadelas-back.herokuapp.com/minas/" + categoria).then(response => response.json() )
     .then((minas) => {
 
         minas.forEach((mulher) => {
