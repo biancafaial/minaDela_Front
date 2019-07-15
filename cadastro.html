@@ -18,17 +18,16 @@
 <body class="purple lighten-5">
 
     <nav style="height: 120px">
-        <div class="nav-wrapper purple accent-3">
+        <div class="nav-wrapper deep-purple darken-4">
             <a href="index.html" class="brand-logo">
                 <img src="img/logo-white.png" class="logo">
-                <p style="float: right; font-size:40px ">Mina Delas</p>
             </a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="index.html">Página Inicial</a></li>
-    
-                </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down" style="padding: 10px 20 auto;">
+                <li><a href="index.html">Página Inicial</a></li>
+
+            </ul>
         </div>
-        
+
     </nav>
 
     <!-- Inicio Formulario -->
@@ -47,20 +46,17 @@
                     <label for="icon_telephone">Telefone</label>
                 </div>
                 <div class="input-field col s6">
+                        <i class="material-icons prefix">fingerprint</i>
+                        <input id="cpf_input" type="text" class="validate" size="14" maxlength="14">
+                        <label for="icon_fingerprint">CPF</label>
+                    </div>
+                <div class="input-field col s12">
                     <i class="material-icons prefix">mail</i>
                     <input id="email_input" type="email" class="validate">
                     <label for="email">Email</label>
                 </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">fingerprint</i>
-                    <input id="cpf_input" type="text" class="validate" size="14" maxlength="14">
-                    <label for="icon_fingerprint">CPF</label>
-                </div>
-                <div class="input-field col s6">
-                    <i class="material-icons prefix">lock</i>
-                    <input id="senha_input" type="password" class="validate">
-                    <label for="password">Senha</label>
-                </div>
+                
+
 
                 <div class="row">
                     <div style="margin-top: 5% ;">
@@ -68,47 +64,40 @@
                         <p style="text-align: center">(Opcional)</p>
                         <p>
                             <label>
-                                <input type="checkbox" id="tecInfo_input" />
+                                <input type="radio" id="tecInfo_input" name="categoria" value="Técnica em Informática" />
                                 <span>Técnica em Informática</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" id="desenvolvedora_input" />
+                                <input type="radio" id="desenvolvedora_input" name="categoria" value="Desenvolvedora" />
                                 <span>Desenvolvedora</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" id="pintora_input" />
+                                <input type="radio" id="pintora_input" name="categoria" value="Pintora" />
                                 <span>Pintora</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" id="designer_input" />
+                                <input type="radio" id="designer_input" name="categoria" value="Designer" />
                                 <span>Designer</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" id="tecCel_input" />
+                                <input type="radio" id="tecCel_input" name="categoria" value="Técnica em Celulares" />
                                 <span>Técnica em Celulares</span>
                             </label>
                         </p>
                         <p>
                             <label>
-                                <input type="checkbox" id="marida_input" />
+                                <input type="radio" id="marida_input" name="categoria" value="Marida de Aluguel" />
                                 <span>Marida de Aluguel</span>
                             </label>
                         </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="professora_input" />
-                                <span>Professora Particular</span>
-                            </label>
-                        </p>
-
                     </div>
                     <div class="input-field col s12">
                         <textarea id="descricao_input" class="materialize-textarea"></textarea>
@@ -121,7 +110,7 @@
             </div>
 
 
-            <button class="btn-large purple accent-3" id="criar_mina_button" style="position: center;">
+            <button class="btn-large pink darken-3" id="criar_mina_button" style="position: center;">
                 <i class="material-icons right">sentiment_very_satisfied</i>Cadastrar</button>
 
 

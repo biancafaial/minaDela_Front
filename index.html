@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -17,38 +17,81 @@
 
 <body class="purple lighten-5">
 
-    <nav style="height: 120px">
-        <div class="nav-wrapper purple accent-3">
-            <a href="#" class="brand-logo"> 
-                <img src="img/logo-white.png" class="logo"> 
-                <p style="float: right; font-size:40px ">Mina Delas</p></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
+    <nav style="height: 130px">
+        <div class="nav-wrapper deep-purple darken-4">
+            <a href="#" class="brand-logo">
+                <img src="img/logo-white.png" class="logo">
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="">Login</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
 
-            </ul>
+                </ul>
         </div>
-        
+
     </nav>
 
     <div class="col s12 m7">
-            <h2 class="header">Escolha serviço de Divas</h2>
-            <div class="card horizontal purple accent-1" style="height: 25%; width: 50%;">
+
+
+        <section id="servicos" class="servicos">
+            <h4 style="text-align: center">Escolha seu serviço </h4>
+          <a href="perfis.html?categoria=Técnica em Informática">
+            <article class="servico" >
+                <p>Técnica em Informática</p>
+                <img src="img/tecInfo-img.png">
+            </article>
+        </a>
+        <a href="perfis.html?categoria=Desenvolvedora">
+                <article class="servico" >
+                    <p>Desenvolvedora</p>
+                    <img src="img/desenvolvedora-img.png">
+                </article>
+        </a>
+        <a href="perfis.html?categoria=Pintora">
+                <article class="servico" >
+                    <p>Pintora</p>
+                    <img src="img/pintora-img.png">
+                </article>
+        </a>
+        <a href="perfis.html?categoria=Técnica em Celulares">
+                <article class="servico" >
+                    <p>Técnica em Celulares</p>
+                    <img src="img/tecCel-img.png">
+                </article>
+        </a>
+        <a href="perfis.html?categoria=Designer">
+                <article class="servico" >
+                    <p>Designer</p>
+                    <img src="img/designer-img.png">
+                </article>
+        </a>
+        <a href="perfis.html?categoria=Marida de Aluguel">
+                <article class="servico" >
+                    <p>Marida de Aluguel</p>
+                    <img src="img/maridaAluguel-img.png">
+                </article>
+        </a>
+
+        </section>
+        
+
+
+        <!-- <div class="card horizontal purple accent-1" style="height: 25%; width: 40%;">
               <div class="card-image">
                 <img src="img/desenvolvedora-img.png">
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p>I am a very simple card. I am good at containing small bits of information.</p>
+                  <p>Tec</p>
                 </div>
                 <div class="card-action">
                   <a href="#">This is a link</a>
                 </div>
               </div>
-            </div>
-          </div>
+            </div> -->
+    </div>
 
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 
