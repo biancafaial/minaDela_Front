@@ -1,8 +1,8 @@
   const botao = document.querySelector('#criar_mina_button')
   botao.addEventListener("click", criarMina)
 
-  function criarMina (e) {
-    e.preventDefault();
+  function criarMina () {
+ 
     const nome = document.querySelector("#nome_input").value
     const telefone = document.querySelector("#telefone_input").value
     const email = document.querySelector("#email_input").value
