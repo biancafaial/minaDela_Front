@@ -37,5 +37,15 @@ fetch("http://localhost:3000/minas/" + categoria).then(response => response.json
             descricao.textContent = mulher.descricao;
             card.appendChild(descricao);
 
+            
+            const email = document.createElement('p');
+            email.textContent = mulher.email;
+            card.appendChild(email);
+
+
+            const telefone = document.createElement('p');
+            telefone.textContent = mulher.telefone;
+            card.appendChild(telefone);
+
         })
     })
