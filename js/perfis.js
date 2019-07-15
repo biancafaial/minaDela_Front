@@ -9,7 +9,7 @@ fetch("http://localhost:3000/minas/" + categoria).then(response => response.json
 
         minas.forEach((mulher) => {
             const card = document.createElement('div');
-            card.setAttribute('class', 'maravilhosas__perfil');
+            card.setAttribute('class', 'maravilhosas__perfil card-content');
             boxPerfil.appendChild(card);
 
             // definir imagem
