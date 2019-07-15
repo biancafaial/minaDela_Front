@@ -2,6 +2,11 @@ var urlParams = new URLSearchParams(window.location.search);
 let categoria = urlParams.get("categoria")
 const boxPerfil = document.querySelector('.maravilhosas__box');
 
+const app = document.getElementById('root');
+const authors = document.createElement('div');
+authors.setAttribute('class', 'authors');
+app.appendChild(authors);
+
 
 
 fetch("http://localhost:3000/minas/" + categoria).then(response => response.json() )
@@ -9,9 +14,9 @@ fetch("http://localhost:3000/minas/" + categoria).then(response => response.json
 
         minas.forEach((mulher) => {
             const card = document.createElement('div');
-            card.setAttribute('class', 'maravilhosas__perfil card-content');
-            boxPerfil.appendChild(card);
-
+            card.setAttribute('class', 'card');
+            authors.appendChild(card);
+            
             // definir imagem
             const img = document.createElement('img');
             img.setAttribute('class', 'img-responsive');
@@ -25,11 +30,13 @@ fetch("http://localhost:3000/minas/" + categoria).then(response => response.json
             }
             card.appendChild(img);
 
-            const nome = document.createElement('p');
+
+
+            const nome = document.createElement('h3');
             nome.textContent = mulher.nome;
             card.appendChild(nome);
 
-            const categoria = document.createElement('p');
+            const categoria = document.createElement('h5');
             categoria.textContent = mulher.categoria;
             card.appendChild(categoria);
 
@@ -48,4 +55,7 @@ fetch("http://localhost:3000/minas/" + categoria).then(response => response.json
             card.appendChild(telefone);
 
         })
+    })
+    .catch(function(erro){
+        console.log(erro)
     })
